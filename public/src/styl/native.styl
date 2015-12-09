@@ -1,0 +1,22 @@
+@require 'var'
+
+body
+	background-color $color-grey-light
+
+body, h1, h2, h3, h4, h5, h6, p
+	font-family $font-family-primary
+	
+body, h1, h2, h3, h4, h5, h6
+	margin 0
+	
+h1, h2, h3, h4, h5, h6
+	color $color-main
+
+a
+	color $color-grey
+	text-decoration none
+	&:hover,
+	&:focus,
+	&:active
+		color $color-main
+		border-bottom 1px solid $color-main

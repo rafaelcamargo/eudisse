@@ -1,0 +1,59 @@
+@require 'var'
+@require 'func'
+
+.app-title
+	font-size $size-text-0
+	letter-spacing -4px
+	
+.app-tagline
+	font-size $size-text-1
+	letter-spacing -2px
+	color $color-grey
+
+.dito-border-radius
+	border-radius 15px
+	
+.dito
+	position relative
+	background-color $color-white
+	&:before
+		@extend .dito-border-radius
+		position absolute
+		content ' '
+		top 45px
+		left -15px
+		width 30px
+		height 30px
+		background-color $color-main
+		background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALBJREFUeNpiYMAC/v//Lw/E9QxEAqBafiDOB2J9XJLz/yNAPBEGggx7D1W/H11SH0kSBu4TMHD+f0xgj+zd91gUvMfqJdwG/ocHG8jZ2CRBwYHDQH8s6kFmyCN7Gx3EE/D2fTT169EV1KPbSMBAbI7gR1eE7nV/AobG43UlEDABsQCa2AMCqUgBjX8Bm834wH4s6uvxaYC5lOpg1NAhYigLEB/AI38Bi9gDAnoYAAIMALu7icYZroqnAAAAAElFTkSuQmCC')
+		background-position center 7px
+		background-size 60%
+		background-repeat no-repeat
+		
+	
+.dito-title
+	padding 40px 30px
+	color $color-grey-dark
+	font-family $font-family-secondary
+	font-size $size-text-1
+	font-style italic
+	text-transform lowercase
+	
+.dito-details
+	padding 15px 30px
+	color $color-grey
+	border-top 1px solid $color-grey-light
+	
+.dito-author
+	position relative
+	padding-left 20px
+	&:before
+		position absolute
+		content '@'
+		top 0
+		left 0
+
+.dito-date
+	margin-left 10px
+	font-size $size-text-5
+	text-transform uppercase
